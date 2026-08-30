@@ -12,6 +12,19 @@ A small URL shortener built for the Gulf Full Stack Developer assignment.
 - xUnit
 - In-memory storage
 
+## Prerequisites
+
+- .NET SDK 10 or later
+- Node.js 22 or later and npm
+
+Check installed versions:
+
+```bash
+dotnet --version
+node --version
+npm --version
+```
+
 ## Run locally
 
 Start the API (the default HTTP profile uses port `5000`):
@@ -38,6 +51,16 @@ Run backend tests:
 ```bash
 dotnet test backend/GulfUrlShortener.slnx
 ```
+
+Run frontend checks:
+
+```bash
+cd frontend/gulf-url-shortener-ui
+npm run lint
+npm run build
+```
+
+The backend stores data in memory, so links and click counts reset whenever the API restarts.
 
 ## API contract
 
