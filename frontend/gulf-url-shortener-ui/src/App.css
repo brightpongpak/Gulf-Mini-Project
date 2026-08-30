@@ -1,0 +1,113 @@
+.app-shell {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 72px;
+  padding: 0 max(24px, calc((100% - 1180px) / 2));
+  background: #102a43;
+}
+.brand {
+  color: #fff;
+  font:
+    700 24px "Space Grotesk",
+    sans-serif;
+  letter-spacing: -0.6px;
+}
+.brand svg {
+  color: #54d2bd;
+  margin-right: 8px;
+}
+.brand-accent {
+  color: #54d2bd;
+}
+.header-caption {
+  color: #a9bdcf;
+}
+.content {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 58px 0 72px;
+}
+.hero {
+  margin-bottom: 30px;
+}
+.eyebrow {
+  color: #168f86;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  font-size: 12px;
+}
+.hero h1 {
+  max-width: 740px;
+  margin: 10px 0 10px;
+  font:
+    700 clamp(36px, 5vw, 58px)/1.05 "Space Grotesk",
+    sans-serif;
+  letter-spacing: -2px;
+  color: #102a43;
+}
+.hero-accent {
+  color: #168f86;
+}
+.hero p {
+  max-width: 620px;
+  color: #62758a;
+  font-size: 17px;
+}
+.create-card,
+.links-card {
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(29, 54, 80, 0.07);
+}
+.create-card {
+  margin-bottom: 24px;
+}
+.create-card .ant-card-head-title,
+.links-card .ant-card-head-title {
+  font:
+    600 18px "Space Grotesk",
+    sans-serif;
+}
+.create-card .ant-form-item-label > label {
+  color: #41566c;
+  font-weight: 600;
+}
+.links-card .ant-table-wrapper {
+  overflow-x: auto;
+}
+.footer {
+  background: transparent;
+  color: #8a9bad;
+  text-align: center;
+  padding: 0 0 28px;
+}
+@media (max-width: 640px) {
+  .app-header {
+    padding: 0 20px;
+  }
+  .header-caption {
+    display: none;
+  }
+  .content {
+    width: calc(100% - 28px);
+    padding-top: 38px;
+  }
+  .hero h1 {
+    letter-spacing: -1.2px;
+  }
+  .create-card .ant-card-body,
+  .links-card .ant-card-body {
+    padding: 18px;
+  }
+}
+.links-card .ant-table-cell {
+  vertical-align: middle;
+}
+.actions-cell {
+  width: 100%;
+}

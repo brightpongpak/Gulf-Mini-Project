@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GulfUrlShortener.Api/GulfUrlShortener.Api.csproj" />
+  <Project Path="GulfUrlShortener.Tests/GulfUrlShortener.Tests.csproj" />
+</Solution>
